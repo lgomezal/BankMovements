@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MovementsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class MovementsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var movementCollectionView: UICollectionView!
     
@@ -30,9 +30,6 @@ class MovementsViewController: UIViewController, UICollectionViewDelegate, UICol
         //Calculate total account
         let total = self.calculateTotalAccount()
         totalAccount.text = String(total)
-        
-        //Ajust width constraints
-        self.movementCollectionView.widthAnchor.constraint(equalToConstant:  (UIScreen.main.bounds.width) - 10).isActive = true
         
         //register cell
         let nibCell = UINib(nibName: movementCollectionViewCellId, bundle: nil)
@@ -58,6 +55,10 @@ class MovementsViewController: UIViewController, UICollectionViewDelegate, UICol
         cell.refresh(transaction: transaction)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: (UIScreen.main.bounds.width) - 20, height: 140)
     }
     
     func calculateTotalAccount() -> Double {

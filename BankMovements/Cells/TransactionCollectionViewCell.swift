@@ -26,8 +26,6 @@ class TransactionCollectionViewCell: UICollectionViewCell {
         transactionCell.clipsToBounds = true
         transactionCell.layer.borderWidth = 3
         transactionCell.layer.borderColor = CustomColors.orangeColorAlpha.cgColor
-        //Ajust width constraints
-        self.transactionCell.widthAnchor.constraint(equalToConstant:  (UIScreen.main.bounds.width) - 10).isActive = true
     }
     
     func refresh(transaction: Transaction) {
@@ -46,6 +44,8 @@ class TransactionCollectionViewCell: UICollectionViewCell {
             self.feeCell.text = String(transaction.fee!)
             if transaction.fee! < 0 {
                 self.feeCell.textColor = .red
+            } else {
+                self.feeCell.textColor = .black
             }
             let total = transaction.amount + fee
             self.totalCell.text = String(total)
