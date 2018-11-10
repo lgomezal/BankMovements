@@ -25,6 +25,10 @@
 		BA370E3D2196F151006BE493 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E3C2196F151006BE493 /* Alerts.swift */; };
 		BA370E412196F265006BE493 /* MapTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E402196F265006BE493 /* MapTransactions.swift */; };
 		BA370E442196F685006BE493 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E432196F685006BE493 /* JSONParser.swift */; };
+		BA370E462197004E006BE493 /* MovementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E452197004E006BE493 /* MovementsViewController.swift */; };
+		BA370E482197005F006BE493 /* MovementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA370E472197005F006BE493 /* MovementsViewController.xib */; };
+		BA370E4A21970145006BE493 /* TransactionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E4921970145006BE493 /* TransactionCollectionViewCell.swift */; };
+		BA370E4C219701C9006BE493 /* TransactionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA370E4B219701C9006BE493 /* TransactionCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		BA370E3C2196F151006BE493 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		BA370E402196F265006BE493 /* MapTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTransactions.swift; sourceTree = "<group>"; };
 		BA370E432196F685006BE493 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		BA370E452197004E006BE493 /* MovementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementsViewController.swift; sourceTree = "<group>"; };
+		BA370E472197005F006BE493 /* MovementsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovementsViewController.xib; sourceTree = "<group>"; };
+		BA370E4921970145006BE493 /* TransactionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA370E4B219701C9006BE493 /* TransactionCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,8 @@
 		BA370E1B2196E4FB006BE493 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BA370E4921970145006BE493 /* TransactionCollectionViewCell.swift */,
+				BA370E4B219701C9006BE493 /* TransactionCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -168,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				BA370E302196F013006BE493 /* InitialViewController.xib */,
+				BA370E472197005F006BE493 /* MovementsViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				BA370E222196E5A6006BE493 /* InitialViewController.swift */,
+				BA370E452197004E006BE493 /* MovementsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -286,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA370E062196E4D6006BE493 /* LaunchScreen.storyboard in Resources */,
+				BA370E4C219701C9006BE493 /* TransactionCollectionViewCell.xib in Resources */,
+				BA370E482197005F006BE493 /* MovementsViewController.xib in Resources */,
 				BA370E032196E4D6006BE493 /* Assets.xcassets in Resources */,
 				BA370E312196F013006BE493 /* InitialViewController.xib in Resources */,
 			);
@@ -308,6 +322,7 @@
 				BA370E272196E5FC006BE493 /* UIviewController+Additions.swift in Sources */,
 				BA370E3B2196F139006BE493 /* Typealias.swift in Sources */,
 				BA370E442196F685006BE493 /* JSONParser.swift in Sources */,
+				BA370E4A21970145006BE493 /* TransactionCollectionViewCell.swift in Sources */,
 				BA370E2B2196E7E1006BE493 /* Movements.swift in Sources */,
 				BA370E352196F0C9006BE493 /* CustomColors.swift in Sources */,
 				BA370DFC2196E4D4006BE493 /* AppDelegate.swift in Sources */,
@@ -317,6 +332,7 @@
 				BA370E372196F0F4006BE493 /* DownloadAllMovementsInteractor.swift in Sources */,
 				BA370E332196F09A006BE493 /* Constans.swift in Sources */,
 				BA370E292196E7B3006BE493 /* Transaction.swift in Sources */,
+				BA370E462197004E006BE493 /* MovementsViewController.swift in Sources */,
 				BA370E3D2196F151006BE493 /* Alerts.swift in Sources */,
 				BA370E392196F113006BE493 /* DownloadAllMovementsInteractorNSURLSessionImpl.swift in Sources */,
 			);

@@ -24,16 +24,11 @@ class InitialViewController: UIViewController {
         
         //Configure text color for buttons
         urlSessionButton.setTitleColor(CustomColors.orangeColor, for: .normal)
-        alamofireButton.setTitleColor(CustomColors.orangeColor, for: .normal)
         
     }
     
     @IBAction func urlSessionButtonPress(_ sender: UIButton) {
         downloadMovementsWithURLSession()
-    }
-    
-    @IBAction func alamofireButtonPress(_ sender: UIButton) {
-        
     }
     
     func downloadMovementsWithURLSession() {
@@ -46,12 +41,13 @@ class InitialViewController: UIViewController {
         downloadMovementsInteractor.execute(onSuccess: { (movements: Movements) in
             //OK
             activityIndicator.removeFromSuperview()
-            print(movements)
+            let movementsViewController = MovementsViewController()
+            movementsViewController.movements = movements
+            self.navigationController?.pushViewController(movementsViewController, animated: true)
         }) { (error) in
             activityIndicator.removeFromSuperview()
             let alert = Alerts().alert(title: "ERROR", message: Constants.errorParsing)
             self.present(alert, animated: true, completion: nil)
         }
-        
     }
 }
