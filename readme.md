@@ -1,0 +1,1 @@
+### **Prueba técnica en swift**> ### **Bank movements**>  El ejercicio consiste en la implementación de una sencilla aplicación móvil que presente por pantalla información de las transacciones de una cuenta bancaria obtenidas de un servicio web en formato JSON.
