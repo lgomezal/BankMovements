@@ -8,12 +8,50 @@
 
 import UIKit
 
-class InitialViewController: UIViewController {
+let activityIndicator = UIActivityIndicatorView(style: .gray)
 
+class InitialViewController: UIViewController {
+    
+    @IBOutlet weak var urlSessionButton: UIButton!
+    
+    @IBOutlet weak var alamofireButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //Add title
+        title = Constants.initialTitle
+        
+        //Configure text color for buttons
+        urlSessionButton.setTitleColor(CustomColors.orangeColor, for: .normal)
+        alamofireButton.setTitleColor(CustomColors.orangeColor, for: .normal)
+        
     }
-
-
+    
+    @IBAction func urlSessionButtonPress(_ sender: UIButton) {
+        downloadMovementsWithURLSession()
+    }
+    
+    @IBAction func alamofireButtonPress(_ sender: UIButton) {
+        
+    }
+    
+    func downloadMovementsWithURLSession() {
+        //Configure activity indicator
+        view.addSubview(activityIndicator)
+        activityIndicator.frame = view.bounds
+        activityIndicator.startAnimating()
+        let downloadMovementsInteractor: DownloadAllMovementsInteractor = DownloadAllMovementsInteractorNSURLSessionImpl()
+        
+        downloadMovementsInteractor.execute(onSuccess: { (movements: Movements) in
+            //OK
+            activityIndicator.removeFromSuperview()
+            print(movements)
+        }) { (error) in
+            activityIndicator.removeFromSuperview()
+            let alert = Alerts().alert(title: "ERROR", message: Constants.errorParsing)
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+    }
 }

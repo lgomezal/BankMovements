@@ -11,12 +11,20 @@
 		BA370E032196E4D6006BE493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA370E022196E4D6006BE493 /* Assets.xcassets */; };
 		BA370E062196E4D6006BE493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA370E042196E4D6006BE493 /* LaunchScreen.storyboard */; };
 		BA370E242196E5A6006BE493 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E222196E5A6006BE493 /* InitialViewController.swift */; };
-		BA370E252196E5A6006BE493 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA370E232196E5A6006BE493 /* InitialViewController.xib */; };
 		BA370E272196E5FC006BE493 /* UIviewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E262196E5FC006BE493 /* UIviewController+Additions.swift */; };
 		BA370E292196E7B3006BE493 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E282196E7B3006BE493 /* Transaction.swift */; };
 		BA370E2B2196E7E1006BE493 /* Movements.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E2A2196E7E1006BE493 /* Movements.swift */; };
-		BA370E2D2196E862006BE493 /* OperationCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E2C2196E862006BE493 /* OperationCodable.swift */; };
+		BA370E2D2196E862006BE493 /* TransactionCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E2C2196E862006BE493 /* TransactionCodable.swift */; };
 		BA370E2F2196E8AA006BE493 /* TransactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E2E2196E8AA006BE493 /* TransactionTests.swift */; };
+		BA370E312196F013006BE493 /* InitialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA370E302196F013006BE493 /* InitialViewController.xib */; };
+		BA370E332196F09A006BE493 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E322196F09A006BE493 /* Constans.swift */; };
+		BA370E352196F0C9006BE493 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E342196F0C9006BE493 /* CustomColors.swift */; };
+		BA370E372196F0F4006BE493 /* DownloadAllMovementsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E362196F0F4006BE493 /* DownloadAllMovementsInteractor.swift */; };
+		BA370E392196F113006BE493 /* DownloadAllMovementsInteractorNSURLSessionImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E382196F113006BE493 /* DownloadAllMovementsInteractorNSURLSessionImpl.swift */; };
+		BA370E3B2196F139006BE493 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E3A2196F139006BE493 /* Typealias.swift */; };
+		BA370E3D2196F151006BE493 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E3C2196F151006BE493 /* Alerts.swift */; };
+		BA370E412196F265006BE493 /* MapTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E402196F265006BE493 /* MapTransactions.swift */; };
+		BA370E442196F685006BE493 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E432196F685006BE493 /* JSONParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +46,20 @@
 		BA370E0C2196E4D6006BE493 /* BankMovementsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankMovementsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA370E122196E4D6006BE493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA370E222196E5A6006BE493 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		BA370E232196E5A6006BE493 /* InitialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
 		BA370E262196E5FC006BE493 /* UIviewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIviewController+Additions.swift"; sourceTree = "<group>"; };
 		BA370E282196E7B3006BE493 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		BA370E2A2196E7E1006BE493 /* Movements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movements.swift; sourceTree = "<group>"; };
-		BA370E2C2196E862006BE493 /* OperationCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationCodable.swift; sourceTree = "<group>"; };
+		BA370E2C2196E862006BE493 /* TransactionCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCodable.swift; sourceTree = "<group>"; };
 		BA370E2E2196E8AA006BE493 /* TransactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTests.swift; sourceTree = "<group>"; };
+		BA370E302196F013006BE493 /* InitialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InitialViewController.xib; sourceTree = "<group>"; };
+		BA370E322196F09A006BE493 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		BA370E342196F0C9006BE493 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		BA370E362196F0F4006BE493 /* DownloadAllMovementsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllMovementsInteractor.swift; sourceTree = "<group>"; };
+		BA370E382196F113006BE493 /* DownloadAllMovementsInteractorNSURLSessionImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllMovementsInteractorNSURLSessionImpl.swift; sourceTree = "<group>"; };
+		BA370E3A2196F139006BE493 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		BA370E3C2196F151006BE493 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		BA370E402196F265006BE493 /* MapTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTransactions.swift; sourceTree = "<group>"; };
+		BA370E432196F685006BE493 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +135,10 @@
 		BA370E1C2196E504006BE493 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BA370E322196F09A006BE493 /* Constans.swift */,
+				BA370E342196F0C9006BE493 /* CustomColors.swift */,
+				BA370E3A2196F139006BE493 /* Typealias.swift */,
+				BA370E3C2196F151006BE493 /* Alerts.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -126,9 +146,11 @@
 		BA370E1D2196E512006BE493 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA370E422196F666006BE493 /* JSONParser */,
+				BA370E3E2196F23B006BE493 /* Mappers */,
 				BA370E282196E7B3006BE493 /* Transaction.swift */,
 				BA370E2A2196E7E1006BE493 /* Movements.swift */,
-				BA370E2C2196E862006BE493 /* OperationCodable.swift */,
+				BA370E2C2196E862006BE493 /* TransactionCodable.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -136,6 +158,8 @@
 		BA370E1E2196E521006BE493 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				BA370E362196F0F4006BE493 /* DownloadAllMovementsInteractor.swift */,
+				BA370E382196F113006BE493 /* DownloadAllMovementsInteractorNSURLSessionImpl.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -143,7 +167,7 @@
 		BA370E1F2196E52B006BE493 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BA370E232196E5A6006BE493 /* InitialViewController.xib */,
+				BA370E302196F013006BE493 /* InitialViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +186,22 @@
 				BA370E262196E5FC006BE493 /* UIviewController+Additions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BA370E3E2196F23B006BE493 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				BA370E402196F265006BE493 /* MapTransactions.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		BA370E422196F666006BE493 /* JSONParser */ = {
+			isa = PBXGroup;
+			children = (
+				BA370E432196F685006BE493 /* JSONParser.swift */,
+			);
+			path = JSONParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,7 +287,7 @@
 			files = (
 				BA370E062196E4D6006BE493 /* LaunchScreen.storyboard in Resources */,
 				BA370E032196E4D6006BE493 /* Assets.xcassets in Resources */,
-				BA370E252196E5A6006BE493 /* InitialViewController.xib in Resources */,
+				BA370E312196F013006BE493 /* InitialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,11 +306,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA370E272196E5FC006BE493 /* UIviewController+Additions.swift in Sources */,
+				BA370E3B2196F139006BE493 /* Typealias.swift in Sources */,
+				BA370E442196F685006BE493 /* JSONParser.swift in Sources */,
 				BA370E2B2196E7E1006BE493 /* Movements.swift in Sources */,
+				BA370E352196F0C9006BE493 /* CustomColors.swift in Sources */,
 				BA370DFC2196E4D4006BE493 /* AppDelegate.swift in Sources */,
 				BA370E242196E5A6006BE493 /* InitialViewController.swift in Sources */,
-				BA370E2D2196E862006BE493 /* OperationCodable.swift in Sources */,
+				BA370E412196F265006BE493 /* MapTransactions.swift in Sources */,
+				BA370E2D2196E862006BE493 /* TransactionCodable.swift in Sources */,
+				BA370E372196F0F4006BE493 /* DownloadAllMovementsInteractor.swift in Sources */,
+				BA370E332196F09A006BE493 /* Constans.swift in Sources */,
 				BA370E292196E7B3006BE493 /* Transaction.swift in Sources */,
+				BA370E3D2196F151006BE493 /* Alerts.swift in Sources */,
+				BA370E392196F113006BE493 /* DownloadAllMovementsInteractorNSURLSessionImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

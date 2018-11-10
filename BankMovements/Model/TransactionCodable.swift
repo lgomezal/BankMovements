@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct OperationCodable: Codable {
+struct TransactionCodable: Codable {
     
     let id: Int
     let date: Date?

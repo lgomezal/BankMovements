@@ -10,7 +10,7 @@ import Foundation
 
 public protocol MovementsProtocol {
     func count() -> Int
-    func add(operation: Transaction)
+    func add(transaction: Transaction)
     func get(index: Int) -> Transaction
 }
 
@@ -26,8 +26,8 @@ public class Movements: MovementsProtocol {
         return (movementsList?.count) ?? 0
     }
     
-    public func add(operation: Transaction) {
-        movementsList?.append(operation)
+    public func add(transaction: Transaction) {
+        movementsList?.append(transaction)
     }
     
     public func get(index: Int) -> Transaction {
