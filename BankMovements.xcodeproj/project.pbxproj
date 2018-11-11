@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F5846301CCC8935DED811DF /* Pods_BankMovements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25B9E844521C40A9C0D7E5C /* Pods_BankMovements.framework */; };
 		BA370DFC2196E4D4006BE493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370DFB2196E4D4006BE493 /* AppDelegate.swift */; };
 		BA370E032196E4D6006BE493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA370E022196E4D6006BE493 /* Assets.xcassets */; };
 		BA370E062196E4D6006BE493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA370E042196E4D6006BE493 /* LaunchScreen.storyboard */; };
@@ -29,6 +30,8 @@
 		BA370E482197005F006BE493 /* MovementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA370E472197005F006BE493 /* MovementsViewController.xib */; };
 		BA370E4A21970145006BE493 /* TransactionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA370E4921970145006BE493 /* TransactionCollectionViewCell.swift */; };
 		BA370E4C219701C9006BE493 /* TransactionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA370E4B219701C9006BE493 /* TransactionCollectionViewCell.xib */; };
+		BA5F89AD21980A77004983DC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = BA5F89AC21980A77004983DC /* Podfile */; };
+		BA5F89AF21980DFD004983DC /* DownloadAllMovementsInteractorAlamofireImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F89AE21980DFD004983DC /* DownloadAllMovementsInteractorAlamofireImpl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +44,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BA5F89B3219819B1004983DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3CB9FDA83F0CB18067206573 /* Pods-BankMovements.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankMovements.release.xcconfig"; path = "Pods/Target Support Files/Pods-BankMovements/Pods-BankMovements.release.xcconfig"; sourceTree = "<group>"; };
+		4CAFE07C308ADDD6D18D8780 /* Pods_BankMovementsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankMovementsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8694C29F8B8650725D220E4E /* Pods-BankMovements.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BankMovements.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BankMovements/Pods-BankMovements.debug.xcconfig"; sourceTree = "<group>"; };
 		BA370DF82196E4D4006BE493 /* BankMovements.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankMovements.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA370DFB2196E4D4006BE493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA370E022196E4D6006BE493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +87,9 @@
 		BA370E472197005F006BE493 /* MovementsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovementsViewController.xib; sourceTree = "<group>"; };
 		BA370E4921970145006BE493 /* TransactionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCollectionViewCell.swift; sourceTree = "<group>"; };
 		BA370E4B219701C9006BE493 /* TransactionCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransactionCollectionViewCell.xib; sourceTree = "<group>"; };
+		BA5F89AC21980A77004983DC /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA5F89AE21980DFD004983DC /* DownloadAllMovementsInteractorAlamofireImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadAllMovementsInteractorAlamofireImpl.swift; sourceTree = "<group>"; };
+		E25B9E844521C40A9C0D7E5C /* Pods_BankMovements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BankMovements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F5846301CCC8935DED811DF /* Pods_BankMovements.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +111,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CBF543621AFF86FC9BEA897 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8694C29F8B8650725D220E4E /* Pods-BankMovements.debug.xcconfig */,
+				3CB9FDA83F0CB18067206573 /* Pods-BankMovements.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BA370DEF2196E4D4006BE493 = {
 			isa = PBXGroup;
 			children = (
+				BA5F89AC21980A77004983DC /* Podfile */,
 				BA370DFA2196E4D4006BE493 /* BankMovements */,
 				BA370E0F2196E4D6006BE493 /* BankMovementsTests */,
 				BA370DF92196E4D4006BE493 /* Products */,
+				5CBF543621AFF86FC9BEA897 /* Pods */,
+				C9136C95599437C9AFC8BFAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +205,7 @@
 			children = (
 				BA370E362196F0F4006BE493 /* DownloadAllMovementsInteractor.swift */,
 				BA370E382196F113006BE493 /* DownloadAllMovementsInteractorNSURLSessionImpl.swift */,
+				BA5F89AE21980DFD004983DC /* DownloadAllMovementsInteractorAlamofireImpl.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -216,6 +252,15 @@
 			path = JSONParser;
 			sourceTree = "<group>";
 		};
+		C9136C95599437C9AFC8BFAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E25B9E844521C40A9C0D7E5C /* Pods_BankMovements.framework */,
+				4CAFE07C308ADDD6D18D8780 /* Pods_BankMovementsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,9 +268,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA370E152196E4D6006BE493 /* Build configuration list for PBXNativeTarget "BankMovements" */;
 			buildPhases = (
+				D8CE71BE9DD9396E972FF2D9 /* [CP] Check Pods Manifest.lock */,
 				BA370DF42196E4D4006BE493 /* Sources */,
 				BA370DF52196E4D4006BE493 /* Frameworks */,
 				BA370DF62196E4D4006BE493 /* Resources */,
+				188996330B4714625C1F341B /* [CP] Embed Pods Frameworks */,
+				BA5F89B3219819B1004983DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA5F89AD21980A77004983DC /* Podfile in Resources */,
 				BA370E062196E4D6006BE493 /* LaunchScreen.storyboard in Resources */,
 				BA370E4C219701C9006BE493 /* TransactionCollectionViewCell.xib in Resources */,
 				BA370E482197005F006BE493 /* MovementsViewController.xib in Resources */,
@@ -313,6 +362,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		188996330B4714625C1F341B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BankMovements/Pods-BankMovements-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BankMovements/Pods-BankMovements-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8CE71BE9DD9396E972FF2D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BankMovements-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BA370DF42196E4D4006BE493 /* Sources */ = {
@@ -334,6 +422,7 @@
 				BA370E292196E7B3006BE493 /* Transaction.swift in Sources */,
 				BA370E462197004E006BE493 /* MovementsViewController.swift in Sources */,
 				BA370E3D2196F151006BE493 /* Alerts.swift in Sources */,
+				BA5F89AF21980DFD004983DC /* DownloadAllMovementsInteractorAlamofireImpl.swift in Sources */,
 				BA370E392196F113006BE493 /* DownloadAllMovementsInteractorNSURLSessionImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +575,7 @@
 		};
 		BA370E162196E4D6006BE493 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8694C29F8B8650725D220E4E /* Pods-BankMovements.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +594,7 @@
 		};
 		BA370E172196E4D6006BE493 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB9FDA83F0CB18067206573 /* Pods-BankMovements.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InitialViewController" customModule="BankMovements" customModuleProvider="target">
             <connections>
+                <outlet property="alamofireButton" destination="RKg-nm-KVH" id="a4e-fd-Pcs"/>
                 <outlet property="urlSessionButton" destination="TUe-7Q-7NU" id="Rh8-Zv-KsR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,11 +32,19 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUe-7Q-7NU">
-                    <rect key="frame" x="105" y="261.5" width="204" height="40"/>
+                    <rect key="frame" x="92.5" y="261.5" width="229" height="40"/>
                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                    <state key="normal" title="Obtener Movimientos"/>
+                    <state key="normal" title="Obtener con URLSession"/>
                     <connections>
                         <action selector="urlSessionButtonPress:" destination="-1" eventType="touchUpInside" id="MHU-j9-Sp9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKg-nm-KVH">
+                    <rect key="frame" x="100.5" y="318" width="213" height="40"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                    <state key="normal" title="Obtener con Alamofire"/>
+                    <connections>
+                        <action selector="alamofireButtonPress:" destination="-1" eventType="touchUpInside" id="xMm-C4-0FM"/>
                     </connections>
                 </button>
             </subviews>
@@ -43,10 +52,12 @@
             <constraints>
                 <constraint firstItem="ATa-Qj-eKM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="0CX-QW-OWQ"/>
                 <constraint firstItem="TUe-7Q-7NU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VfQ-bz-CTs"/>
+                <constraint firstItem="RKg-nm-KVH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cvG-Uu-5OW"/>
                 <constraint firstItem="8Ng-W9-4bo" firstAttribute="top" secondItem="ATa-Qj-eKM" secondAttribute="bottom" constant="30" id="dN8-Z5-Hia"/>
                 <constraint firstItem="8Ng-W9-4bo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eH3-fT-b1O"/>
                 <constraint firstItem="ATa-Qj-eKM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fAy-wR-0un"/>
                 <constraint firstItem="TUe-7Q-7NU" firstAttribute="top" secondItem="8Ng-W9-4bo" secondAttribute="bottom" constant="30" id="fHf-Z4-hmL"/>
+                <constraint firstItem="RKg-nm-KVH" firstAttribute="top" secondItem="TUe-7Q-7NU" secondAttribute="bottom" constant="16.5" id="v0o-hd-c8f"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="50.724637681159422" y="35.491071428571423"/>
